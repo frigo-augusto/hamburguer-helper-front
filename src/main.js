@@ -4,6 +4,9 @@ import VueRouter from 'vue-router';
 import Home from './views/Home.vue';
 import Test from './views/Example.vue';
 import GerenciadorDePedidos from './views/GerenciadorDePedidos.vue';
+import axios from 'axios'
+
+axios.defaults.baseURL = 'http://127.0.0.1:8000'
 
 Vue.use(VueRouter);
 
@@ -19,6 +22,7 @@ const router = new VueRouter({
 
 new Vue({
   router,
+  axios,
   template: `
     <div>
       <router-view class="view"></router-view>
