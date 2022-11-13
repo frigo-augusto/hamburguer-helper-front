@@ -3,7 +3,7 @@
     <section id="center-container">
       <h1>Hamburguer helper</h1>
       <div id="buttons-container">
-        <button type="button" @click="$router.push('GerenciadorDePedidos')" class="btn btn-primary">Atendente</button>
+        <button type="button" @click="$router.push('atendente')" class="btn btn-primary">Atendente</button>
         <button type="button" class="btn btn-primary">Cozinheiro</button>
         <button type="button" class="btn btn-primary">Caixa</button>
         {{this.msg}}
@@ -30,7 +30,7 @@ export default {
   },
 
   mounted(){
-    
+
   }
 }
 </script>
