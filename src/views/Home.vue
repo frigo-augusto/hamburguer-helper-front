@@ -4,7 +4,7 @@
       <h1>Hamburguer helper</h1>
       <div id="buttons-container">
         <button type="button" @click="$router.push('GerenciadorDePedidos')" class="btn btn-primary">Atendente</button>
-        <button type="button" class="btn btn-primary" @click="callAxios()">Cozinheiro</button>
+        <button type="button" class="btn btn-primary">Cozinheiro</button>
         <button type="button" class="btn btn-primary">Caixa</button>
         {{this.msg}}
       </div>
@@ -17,6 +17,7 @@
 import { isProxy } from 'vue';
 import axios from 'axios';
 export default {
+
   name: 'home',
   data () {
     return {
@@ -25,17 +26,16 @@ export default {
   },
 
   methods:{
-    callAxios(){
-      axios.get("/api/hello-world").then(response => this.msg = response.data);
-    }
+    
   },
 
   mounted(){
+    
   }
 }
 </script>
 
-<style>
+<style scoped>
 main{
   background-color: gray;
   text-align: center;

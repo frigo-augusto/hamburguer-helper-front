@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 main{
   background-color: yellow;
   text-align: center;
